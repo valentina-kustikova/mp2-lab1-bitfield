@@ -102,8 +102,6 @@ bool Matrix::operator==(const Matrix& m) const
 
 ostream& operator<<(ostream& os, const Matrix& m)
 {
-    os << endl;
-
     for (int i = 0; i < m.kRows; i++)
     {
         for (int j = 0; j < m.kCols; j++)

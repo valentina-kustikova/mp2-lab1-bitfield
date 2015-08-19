@@ -1,5 +1,6 @@
-#include <gtest/gtest.h>
 #include "matrix.hpp"
+
+#include <gtest/gtest.h>
 
 TEST(Matrix, matrix_can_set_zeros)
 {
