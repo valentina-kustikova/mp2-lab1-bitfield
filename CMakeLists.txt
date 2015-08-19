@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8)
 
 set(PROJECT_NAME mp2)
 project(${PROJECT_NAME})
@@ -17,14 +17,13 @@ set(MP2_LIBRARY "${PROJECT_NAME}")
 set(MP2_TESTS   "${PROJECT_NAME}_test")
 set(MP2_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
-include_directories("${MP2_INCLUDE}")
-# include_directories("${CMAKE_CURRENT_SOURCE_DIR}/3rdparty")
+include_directories("${MP2_INCLUDE}" gtest)
 
 # BUILD
-add_subdirectory(3rdparty)
 add_subdirectory(src)
-add_subdirectory(test)
 add_subdirectory(samples)
+add_subdirectory(gtest)
+add_subdirectory(test)
 
 # REPORT
 message( STATUS "")

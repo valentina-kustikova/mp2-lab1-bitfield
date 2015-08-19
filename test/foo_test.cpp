@@ -1,6 +1,6 @@
 #include "foo.hpp"
 
-#include <gtest/gtest.h>
+#include <gtest.h>
 
 TEST(Foo, can_return_name)
 {
