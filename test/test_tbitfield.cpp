@@ -23,10 +23,13 @@ TEST(TBitField, new_bitfield_is_set_to_zero)
 {
     TBitField bf(100);
 
+    int sum = 0;
     for (int i = 0; i < bf.GetLength(); i++)
     {
-        EXPECT_EQ(0, bf.GetBit(i));
+        sum += bf.GetBit(i);
     }
+
+    EXPECT_EQ(0, sum);
 }
 
 TEST(TBitField, can_set_bit)
