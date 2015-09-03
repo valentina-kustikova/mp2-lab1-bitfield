@@ -14,6 +14,11 @@ TBitField::TBitField(int len)
     if (len > 0)
     {
         BitLen = len;
+        pMem = new TELEM[BitLen];
+        for (int i = 0; i < BitLen; ++i)
+        {
+            pMem[i] = 0;
+        }
     }
     else
     {
@@ -61,7 +66,7 @@ void TBitField::ClrBit(const int n) // очистить бит
 
 int TBitField::GetBit(const int n) const // получить значение бита
 {
-
+    return pMem[n];
 }
 
 // битовые операции
