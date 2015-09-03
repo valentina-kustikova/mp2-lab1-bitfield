@@ -7,7 +7,7 @@ TEST(TBitField, can_create_bitfield_with_positive_length)
     ASSERT_NO_THROW(TBitField bf(3));
 }
 
-TEST(TBitField, DISABLED_cant_create_bitfield_with_negative_length)
+TEST(TBitField, cant_create_bitfield_with_negative_length)
 {
     ASSERT_ANY_THROW(TBitField bf(-3));
 }

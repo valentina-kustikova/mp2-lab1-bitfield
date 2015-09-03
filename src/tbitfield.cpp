@@ -7,9 +7,18 @@
 
 #include "tbitfield.h"
 
+#include <stdexcept>
+
 TBitField::TBitField(int len)
 {
-
+    if (len > 0)
+    {
+        BitLen = len;
+    }
+    else
+    {
+        throw std::range_error("BitField length can't be negative");
+    }
 }
 
 TBitField::TBitField(const TBitField &bf) // конструктор копирования
