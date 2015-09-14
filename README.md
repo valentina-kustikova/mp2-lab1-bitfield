@@ -1,6 +1,6 @@
-# Методы программирования 2
+# Методы программирования 2: Битовые поля
 
-[![Build Status](https://travis-ci.org/kirill-kornyakov/mp2-project-template.svg)](https://travis-ci.org/kirill-kornyakov/mp2-project-template)
+[![Build Status](https://travis-ci.org/UNN-VMK-Software/mp2-lab1-bitfield.svg)](https://travis-ci.org/UNN-VMK-Software/mp2-lab1-bitfield)
 
 <!-- TODO
 

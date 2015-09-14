@@ -6,9 +6,9 @@ before_script:
   - mkdir ../build
   - cd ../build
 script:
-  - cmake ../mp2-project-template
+  - cmake ../mp2-lab1-bitfield
   - make -j
   - cd ./bin/
-  - ./test_mp2
+  - ./test_bitfield
 notifications:
   email: false
