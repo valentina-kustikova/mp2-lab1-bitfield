@@ -1,9 +1,9 @@
-// ÕÕ√”, ¬Ã ,  ÛÒ "ÃÂÚÓ‰˚ ÔÓ„‡ÏÏËÓ‚‡ÌËˇ-2", —++, ŒŒœ
+// –ù–ù–ì–£, –í–ú–ö, –ö—É—Ä—Å "–ú–µ—Ç–æ–¥—ã –ø—Ä–æ–≥—Ä–∞–º–º–∏—Ä–æ–≤–∞–Ω–∏—è-2", –°++, –û–û–ü
 //
-// tbitfield.cpp - Copyright (c) √Â„ÂÎ¸ ¬.œ. 07.05.2001
-//   œÂÂ‡·ÓÚ‡ÌÓ ‰Îˇ Microsoft Visual Studio 2008 —˚ÒÓÂ‚˚Ï ¿.¬. (19.04.2015)
+// tbitfield.cpp - Copyright (c) –ì–µ—Ä–≥–µ–ª—å –í.–ü. 07.05.2001
+//   –ü–µ—Ä–µ—Ä–∞–±–æ—Ç–∞–Ω–æ –¥–ª—è Microsoft Visual Studio 2008 –°—ã—Å–æ–µ–≤—ã–º –ê.–í. (19.04.2015)
 //
-// ¡ËÚÓ‚ÓÂ ÔÓÎÂ
+// –ë–∏—Ç–æ–≤–æ–µ –ø–æ–ª–µ
 
 #include "tbitfield.h"
 
@@ -11,7 +11,7 @@ TBitField::TBitField(int len)
 {
 }
 
-TBitField::TBitField(const TBitField &bf) // ÍÓÌÒÚÛÍÚÓ ÍÓÔËÓ‚‡ÌËˇ
+TBitField::TBitField(const TBitField &bf) // –∫–æ–Ω—Å—Ç—Ä—É–∫—Ç–æ—Ä –∫–æ–ø–∏—Ä–æ–≤–∞–Ω–∏—è
 {
 }
 
@@ -19,68 +19,68 @@ TBitField::~TBitField()
 {
 }
 
-int TBitField::GetMemIndex(const int n) const // ËÌ‰ÂÍÒ ÃÂÏ ‰Îˇ ·ËÚ‡ n
+int TBitField::GetMemIndex(const int n) const // –∏–Ω–¥–µ–∫—Å –ú–µ–º –¥–ª—è –±–∏—Ç–∞ n
 {
 }
 
-TELEM TBitField::GetMemMask(const int n) const // ·ËÚÓ‚‡ˇ Ï‡ÒÍ‡ ‰Îˇ ·ËÚ‡ n
+TELEM TBitField::GetMemMask(const int n) const // –±–∏—Ç–æ–≤–∞—è –º–∞—Å–∫–∞ –¥–ª—è –±–∏—Ç–∞ n
 {
 }
 
-// ‰ÓÒÚÛÔ Í ·ËÚ‡Ï ·ËÚÓ‚Ó„Ó ÔÓÎˇ
+// –¥–æ—Å—Ç—É–ø –∫ –±–∏—Ç–∞–º –±–∏—Ç–æ–≤–æ–≥–æ –ø–æ–ª—è
 
-int TBitField::GetLength(void) const // ÔÓÎÛ˜ËÚ¸ ‰ÎËÌÛ (Í-‚Ó ·ËÚÓ‚)
-{
-  return 0;
-}
-
-void TBitField::SetBit(const int n) // ÛÒÚ‡ÌÓ‚ËÚ¸ ·ËÚ
-{
-}
-
-void TBitField::ClrBit(const int n) // Ó˜ËÒÚËÚ¸ ·ËÚ
-{
-}
-
-int TBitField::GetBit(const int n) const // ÔÓÎÛ˜ËÚ¸ ÁÌ‡˜ÂÌËÂ ·ËÚ‡
+int TBitField::GetLength(void) const // –ø–æ–ª—É—á–∏—Ç—å –¥–ª–∏–Ω—É (–∫-–≤–æ –±–∏—Ç–æ–≤)
 {
   return 0;
 }
 
-// ·ËÚÓ‚˚Â ÓÔÂ‡ˆËË
-
-TBitField& TBitField::operator=(const TBitField &bf) // ÔËÒ‚‡Ë‚‡ÌËÂ
+void TBitField::SetBit(const int n) // —É—Å—Ç–∞–Ω–æ–≤–∏—Ç—å –±–∏—Ç
 {
 }
 
-int TBitField::operator==(const TBitField &bf) const // Ò‡‚ÌÂÌËÂ
+void TBitField::ClrBit(const int n) // –æ—á–∏—Å—Ç–∏—Ç—å –±–∏—Ç
 {
-  return 0;
 }
 
-int TBitField::operator!=(const TBitField &bf) const // Ò‡‚ÌÂÌËÂ
+int TBitField::GetBit(const int n) const // –ø–æ–ª—É—á–∏—Ç—å –∑–Ω–∞—á–µ–Ω–∏–µ –±–∏—Ç–∞
 {
   return 0;
 }
 
-TBitField TBitField::operator|(const TBitField &bf) // ÓÔÂ‡ˆËˇ "ËÎË"
+// –±–∏—Ç–æ–≤—ã–µ –æ–ø–µ—Ä–∞—Ü–∏–∏
+
+TBitField& TBitField::operator=(const TBitField &bf) // –ø—Ä–∏—Å–≤–∞–∏–≤–∞–Ω–∏–µ
 {
 }
 
-TBitField TBitField::operator&(const TBitField &bf) // ÓÔÂ‡ˆËˇ "Ë"
+int TBitField::operator==(const TBitField &bf) const // —Å—Ä–∞–≤–Ω–µ–Ω–∏–µ
+{
+  return 0;
+}
+
+int TBitField::operator!=(const TBitField &bf) const // —Å—Ä–∞–≤–Ω–µ–Ω–∏–µ
+{
+  return 0;
+}
+
+TBitField TBitField::operator|(const TBitField &bf) // –æ–ø–µ—Ä–∞—Ü–∏—è "–∏–ª–∏"
 {
 }
 
-TBitField TBitField::operator~(void) // ÓÚËˆ‡ÌËÂ
+TBitField TBitField::operator&(const TBitField &bf) // –æ–ø–µ—Ä–∞—Ü–∏—è "–∏"
 {
 }
 
-// ‚‚Ó‰/‚˚‚Ó‰
-
-istream &operator>>(istream &istr, TBitField &bf) // ‚‚Ó‰
+TBitField TBitField::operator~(void) // –æ—Ç—Ä–∏—Ü–∞–Ω–∏–µ
 {
 }
 
-ostream &operator<<(ostream &ostr, const TBitField &bf) // ‚˚‚Ó‰
+// –≤–≤–æ–¥/–≤—ã–≤–æ–¥
+
+istream &operator>>(istream &istr, TBitField &bf) // –≤–≤–æ–¥
+{
+}
+
+ostream &operator<<(ostream &ostr, const TBitField &bf) // –≤—ã–≤–æ–¥
 {
 }
