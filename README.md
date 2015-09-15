@@ -1,4 +1,5 @@
-# Методы программирования 2: Битовые поля
+# Методы программирования 2:
+# Множества на основе битовых полей
 
 [![Build Status](https://travis-ci.org/UNN-VMK-Software/mp2-lab1-bitfield.svg)](https://travis-ci.org/UNN-VMK-Software/mp2-lab1-bitfield)
 
