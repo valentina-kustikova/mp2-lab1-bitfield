@@ -1,0 +1,6 @@
+C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/ALL_BUILD.dir
+C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/ZERO_CHECK.dir
+C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/src/CMakeFiles/bitfield.dir
+C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/gtest/CMakeFiles/gtest.dir
+C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/samples/CMakeFiles/sample_prime_numbers.dir
+C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/test/CMakeFiles/test_bitfield.dir

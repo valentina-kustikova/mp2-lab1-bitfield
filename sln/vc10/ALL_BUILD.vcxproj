@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{56375158-D040-4487-9EDA-55214C6F4B0F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/tmp/mp2-practice/mp2-lab1-bitfield/include;C:/tmp/mp2-practice/mp2-lab1-bitfield/gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/tmp/mp2-practice/mp2-lab1-bitfield/include;C:/tmp/mp2-practice/mp2-lab1-bitfield/gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/tmp/mp2-practice/mp2-lab1-bitfield/include;C:/tmp/mp2-practice/mp2-lab1-bitfield/gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/tmp/mp2-practice/mp2-lab1-bitfield/include;C:/tmp/mp2-practice/mp2-lab1-bitfield/gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/tmp/mp2-practice/mp2-lab1-bitfield -BC:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10 --check-stamp-file C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCPlatform.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXPlatform.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/tmp/mp2-practice/mp2-lab1-bitfield -BC:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10 --check-stamp-file C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCPlatform.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXPlatform.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/tmp/mp2-practice/mp2-lab1-bitfield -BC:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10 --check-stamp-file C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCPlatform.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXPlatform.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/tmp/mp2-practice/mp2-lab1-bitfield -BC:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10 --check-stamp-file C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/CMakeLists.txt;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCPlatform.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXPlatform.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;c:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeCXXCompiler.cmake;C:\tmp\mp2-practice\mp2-lab1-bitfield\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\8eee62e98fc3eb9dcf27411ed302aac4\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/8eee62e98fc3eb9dcf27411ed302aac4/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/8eee62e98fc3eb9dcf27411ed302aac4/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/8eee62e98fc3eb9dcf27411ed302aac4/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/8eee62e98fc3eb9dcf27411ed302aac4/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\ALL_BUILD</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/ZERO_CHECK.vcxproj">
+      <Project>C392F5F3-5482-4FEF-9859-36A2ED8365C0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/src/bitfield.vcxproj">
+      <Project>113F4655-485D-48DC-A766-E16964A3753B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/gtest/gtest.vcxproj">
+      <Project>0796A5D4-D35B-421C-A60F-D2F85DE42213</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/samples/sample_prime_numbers.vcxproj">
+      <Project>65845404-6D62-4091-A133-554B2D0EE4B1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/test/test_bitfield.vcxproj">
+      <Project>CAC15069-C357-4F5D-B57B-A485321A63D1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

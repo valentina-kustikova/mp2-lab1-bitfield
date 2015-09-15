@@ -1,0 +1,73 @@
+The system is: Windows - 6.1 - x86
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec1175181385
+
+Microsoft (R) Visual Studio Version 10.0.30319.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec1175181385, Configuration: Debug Win32 ------
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1175181385.dir\Debug\\" /Fd"C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1175181385.pdb" /Gd /TC /analyze- /errorReport:prompt testCCompiler.c  /Zm1000 
+1>  
+1>  testCCompiler.c
+1>  cmTryCompileExec1175181385.vcxproj -> C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1175181385.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec2620264511
+
+Microsoft (R) Visual Studio Version 10.0.30319.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec2620264511, Configuration: Debug Win32 ------
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2620264511.dir\Debug\\" /Fd"C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2620264511.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\..\..\..\..\..\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+1>  
+1>  CMakeCCompilerABI.c
+1>  cmTryCompileExec2620264511.vcxproj -> C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2620264511.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec1230032327
+
+Microsoft (R) Visual Studio Version 10.0.30319.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec1230032327, Configuration: Debug Win32 ------
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1230032327.dir\Debug\\" /Fd"C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1230032327.pdb" /Gd /TP /analyze- /errorReport:prompt testCXXCompiler.cxx  /Zm1000 
+1>  
+1>  testCXXCompiler.cxx
+1>  cmTryCompileExec1230032327.vcxproj -> C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1230032327.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec4085371428
+
+Microsoft (R) Visual Studio Version 10.0.30319.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec4085371428, Configuration: Debug Win32 ------
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4085371428.dir\Debug\\" /Fd"C:/tmp/mp2-practice/mp2-lab1-bitfield/sln/vc10/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4085371428.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\..\..\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+1>  
+1>  CMakeCXXCompilerABI.cpp
+1>  cmTryCompileExec4085371428.vcxproj -> C:\tmp\mp2-practice\mp2-lab1-bitfield\sln\vc10\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4085371428.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
