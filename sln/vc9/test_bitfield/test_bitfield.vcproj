@@ -173,6 +173,10 @@
 			ReferencedProjectIdentifier="{60932AFC-7808-48B7-B3BF-F2BC151C0065}"
 			RelativePathToProject=".\gtest\gtest.vcproj"
 		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{A76282B3-4276-4945-9AF2-3AC68111A828}"
+			RelativePathToProject=".\bitfield\bitfield.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

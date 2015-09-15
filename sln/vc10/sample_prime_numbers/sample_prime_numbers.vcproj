@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="test_bitfield"
-	ProjectGUID="{C650C93E-F0A7-4235-9F5F-0DCE78609BFB}"
-	RootNamespace="test_bitfield"
+	Name="sample_prime_numbers"
+	ProjectGUID="{5D0218F2-E502-414F-BA66-9E76B2785178}"
+	RootNamespace="sample_prime_numbers"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="../../../gtest;../../../include"
+				AdditionalIncludeDirectories="../../../include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -61,7 +61,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="gtest.lib bitfield.lib"
+				AdditionalDependencies="bitfield.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="../Debug"
 				GenerateDebugInformation="true"
@@ -117,7 +117,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="../../../gtest;../../../include"
+				AdditionalIncludeDirectories="../../../include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -136,7 +136,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="gtest.lib bitfield.lib"
+				AdditionalDependencies="bitfield.lib"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="../Release"
 				GenerateDebugInformation="true"
@@ -170,10 +170,6 @@
 	</Configurations>
 	<References>
 		<ProjectReference
-			ReferencedProjectIdentifier="{60932AFC-7808-48B7-B3BF-F2BC151C0065}"
-			RelativePathToProject=".\gtest\gtest.vcproj"
-		/>
-		<ProjectReference
 			ReferencedProjectIdentifier="{A76282B3-4276-4945-9AF2-3AC68111A828}"
 			RelativePathToProject=".\bitfield\bitfield.vcproj"
 		/>
@@ -185,15 +181,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\..\..\test\test_main.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\test\test_tbitfield.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\test\test_tset.cpp"
+				RelativePath="..\..\..\samples\sample_prime_numbers.cpp"
 				>
 			</File>
 		</Filter>
