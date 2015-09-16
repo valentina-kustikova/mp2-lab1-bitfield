@@ -31,6 +31,7 @@ int TSet::GetMaxPower(void) const // получить макс. к-во эл-т�
 
 int TSet::IsMember(const int Elem) const // элемент множества?
 {
+    return 0;
 }
 
 void TSet::InsElem(const int Elem) // включение элемента множества
@@ -49,6 +50,7 @@ TSet& TSet::operator=(const TSet &s) // присваивание
 
 int TSet::operator==(const TSet &s) const // сравнение
 {
+    return 0;
 }
 
 int TSet::operator!=(const TSet &s) const // сравнение
