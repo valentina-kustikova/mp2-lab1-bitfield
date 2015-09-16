@@ -1,4 +1,4 @@
-## Инструкции по работе с Google Test
+# Инструкции по работе с Google Test
 
   1. Откройте решение `bitfield.sln` из директории `sln`:
      - Если установлена Visual Studio 2008, то решение находится
@@ -58,3 +58,5 @@
      автоматический запуск и проверку корректности тестов), необходимо
      создать Pull Request в upstream-репозиторий. Подробнее, как создать
      Pull Request, в разделе [Общие инструкции по работе с Git][git-instructions].
+
+[git-guide]:   https://github.com/UNN-VMK-Software/mp2-lab1-set/blob/master/docs/part1-git.md

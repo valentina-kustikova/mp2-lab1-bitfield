@@ -98,6 +98,5 @@ __Цель данной работы__  — разработка структу�
 [gtest]:       https://github.com/google/googletest
 [sieve]:       http://habrahabr.ru/post/91112
 [travis]:      https://travis-ci.org/UNN-VMK-Software/mp2-lab1-set
-[origin]:      https://github.com/github-account/mp2-lab1-set
 [git-guide]:   https://github.com/UNN-VMK-Software/mp2-lab1-set/blob/master/docs/part1-git.md
 [gtest-guide]: https://github.com/UNN-VMK-Software/mp2-lab1-set/blob/master/docs/part2-google-test.md
