@@ -4,7 +4,21 @@
 необходимо выполнить перед тем, как начать работать с проектом. Далее
 для определенности используется репозиторий `mp2-lab1-set`.
 
-## Первичная настройка и клонирование
+## Первичная настройка Git
+
+  1. Инсталлировать клиент Git:
+     - [Git](https://git-scm.com/downloads)
+     - [GitHub Desktop](https://desktop.github.com)
+
+  1. Настроить имя пользователя, из под которого будут выполняться все операции
+     с репозиториями Git:
+
+  ```bash
+  $ git config --global user.name  "github-account"
+  $ git config --global user.email "github-account@email.com"
+  ```
+
+# Клонирование репозитория с проектом-шаблоном
 
   1. Создать аккаунт на [github.com](https://github.com), если такой
      отсутствует. Для определенности обозначим аккаунт `github-account`.
@@ -21,18 +35,10 @@
   $ git clone https://github.com/github-account/mp2-lab1-set
   ```
 
-  1. Перейти в директорию mp2-lab1-set:
+  1. Перейти в директорию `mp2-lab1-set`:
 
   ```bash
-  $ cd ./mp2-lab1-bitfield
-  ```
-
-  1. Настроить имя пользователя, из под которого будут выполняться все операции
-     с репозиторием Git:
-
-  ```bash
-  $ git config --global user.name  "github-account"
-  $ git config --global user.email "github-account@email.com"
+  $ cd ./mp2-lab1-ыуе
   ```
 
 ## Внесение изменений, их регистрация и публикация
