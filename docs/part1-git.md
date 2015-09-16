@@ -14,31 +14,31 @@
      с репозиториями Git:
 
   ```bash
-  $ git config --global user.name  "github-account"
-  $ git config --global user.email "github-account@email.com"
+  $ git config --global user.name  "Your Name"
+  $ git config --global user.email "your.email@mail.com"
   ```
 
 # Клонирование репозитория с проектом-шаблоном
 
   1. Создать аккаунт на [github.com](https://github.com), если такой
-     отсутствует. Для определенности обозначим аккаунт `github-account`.
+     отсутствует. Для определенности обозначим аккаунт `GITHUB-ACCOUNT`.
 
   1. Сделать fork [репозитория][upstream] c проектом-шаблоном (в терминологии
      Git `upstream`-репозиторий) к себе в личный профиль с названием
-     `github-account`. В результате будет создана копия репозитория с названием
+     `GITHUB-ACCOUNT`. В результате будет создана копия репозитория с названием
      <https://github.com/github-account/mp2-lab1-set> (`origin`-репозиторий).
 
   1. Клонировать `origin` репозиторий к себе на локальный компьютер,
      воспользовавшись следующей командой:
 
   ```bash
-  $ git clone https://github.com/github-account/mp2-lab1-set
+  $ git clone https://github.com/GITHUB-ACCOUNT/mp2-lab1-set
   ```
 
   1. Перейти в директорию `mp2-lab1-set`:
 
   ```bash
-  $ cd ./mp2-lab1-ыуе
+  $ cd ./mp2-lab1-set
   ```
 
 ## Внесение изменений, их регистрация и публикация
@@ -54,27 +54,27 @@
   ```
 
   1. Пометить файл как добавленный в текущую ветку репозитория (файл будет
-     добавлен после выполнения команды `commit`):
+     добавлен после выполнения команды `git commit`):
 
   ```bash
   $ git add [<file_name>]
   # <file_name> - название файла для добавления в commit
-    если вместо имени указан символ *, то будут добавлены все новые файлы,
-    расширение которых не указано в .gitignore
+  #  если вместо имени указан символ *, то будут добавлены все новые файлы,
+  #  расширение которых не указано в .gitignore
   ```
 
   1. Добавить изменения в текущую ветку локального репозитория:
 
   ```bash
-  $ git commit [-m "<message_to_commit>"] [-a]
+  $ git commit [-m "Some comment for your changes"] [-a]
   # [-a] - автоматически добавляет изменения для существующих на сервере файлов
-    без выполнения команды git add
+  #  без выполнения команды git add
   # [--amend] - перезаписывает последний коммит (используется, если не забыты
-    изменения)
+  #  изменения)
   ```
 
   1. Разместить изменения, которые были добавлены в локальный репозиторий
-     с помощью команды `push`:
+     с помощью команды `git push`:
 
   ```bash
   $ git push origin/master
@@ -86,11 +86,10 @@
 запуск и проверку корректности тестов), необходимо создать Pull Request
 в `upstream`-репозиторий:
 
-  1. Открыть в браузере <https://github.com/github-account/mp2-lab1-set>.
+  1. Открыть в браузере <https://github.com/GITHUB-ACCOUNT/mp2-lab1-set>.
   2. Нажать кнопку Pull Request в строке над исходными кодами, содержащей
      информацию о последних коммитах.
 
 <!-- LINKS -->
 
 [upstream]:   https://github.com/UNN-VMK-Software/mp2-lab1-set
-[origin]:     https://github.com/github-account/mp2-lab1-set
