@@ -6,9 +6,9 @@ before_script:
   - mkdir ../build
   - cd ../build
 script:
-  - cmake ../mp2-lab1-bitfield
+  - cmake ../mp2-lab1-set
   - make -j
   - cd ./bin/
-  - ./test_bitfield --gtest_list_tests
+  - ./test_set --gtest_list_tests
 notifications:
   email: false
