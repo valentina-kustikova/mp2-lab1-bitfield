@@ -1,9 +1,9 @@
-// ÍÍÃÓ, ÂÌÊ, Êóðñ "Ìåòîäû ïðîãðàììèðîâàíèÿ-2", Ñ++, ÎÎÏ
+// ÐÐÐ“Ð£, Ð’ÐœÐš, ÐšÑƒÑ€Ñ "ÐœÐµÑ‚Ð¾Ð´Ñ‹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ-2", Ð¡++, ÐžÐžÐŸ
 //
-// tset.cpp - Copyright (c) Ãåðãåëü Â.Ï. 04.10.2001
-//   Ïåðåðàáîòàíî äëÿ Microsoft Visual Studio 2008 Ñûñîåâûì À.Â. (19.04.2015)
+// tset.cpp - Copyright (c) Ð“ÐµÑ€Ð³ÐµÐ»ÑŒ Ð’.ÐŸ. 04.10.2001
+//   ÐŸÐµÑ€ÐµÑ€Ð°Ð±Ð¾Ñ‚Ð°Ð½Ð¾ Ð´Ð»Ñ Microsoft Visual Studio 2008 Ð¡Ñ‹ÑÐ¾ÐµÐ²Ñ‹Ð¼ Ð.Ð’. (19.04.2015)
 //
-// Ìíîæåñòâî - ðåàëèçàöèÿ ÷åðåç áèòîâûå ïîëÿ
+// ÐœÐ½Ð¾Ð¶ÐµÑÑ‚Ð²Ð¾ - Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ Ñ‡ÐµÑ€ÐµÐ· Ð±Ð¸Ñ‚Ð¾Ð²Ñ‹Ðµ Ð¿Ð¾Ð»Ñ
 
 #include "tset.h"
 
@@ -11,12 +11,12 @@ TSet::TSet(int mp)
 {
 }
 
-// êîíñòðóêòîð êîïèðîâàíèÿ
+// ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ
 TSet::TSet(const TSet &s)
 {
 }
 
-// êîíñòðóêòîð ïðåîáðàçîâàíèÿ òèïà
+// ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð¿Ñ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ñ Ñ‚Ð¸Ð¿Ð°
 TSet::TSet(const TBitField &bf)
 {
 }
@@ -25,62 +25,62 @@ TSet::operator TBitField()
 {  
 }
 
-int TSet::GetMaxPower(void) const // ïîëó÷èòü ìàêñ. ê-âî ýë-òîâ
+int TSet::GetMaxPower(void) const // Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¼Ð°ÐºÑ. Ðº-Ð²Ð¾ ÑÐ»-Ñ‚Ð¾Ð²
 {
 }
 
-int TSet::IsMember(const int Elem) const // ýëåìåíò ìíîæåñòâà?
+int TSet::IsMember(const int Elem) const // ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²Ð°?
 {
 }
 
-void TSet::InsElem(const int Elem) // âêëþ÷åíèå ýëåìåíòà ìíîæåñòâà
+void TSet::InsElem(const int Elem) // Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²Ð°
 {
 }
 
-void TSet::DelElem(const int Elem) // èñêëþ÷åíèå ýëåìåíòà ìíîæåñòâà
+void TSet::DelElem(const int Elem) // Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²Ð°
 {
 }
 
-// òåîðåòèêî-ìíîæåñòâåííûå îïåðàöèè
+// Ñ‚ÐµÐ¾Ñ€ÐµÑ‚Ð¸ÐºÐ¾-Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ðµ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸
 
-TSet& TSet::operator=(const TSet &s) // ïðèñâàèâàíèå
+TSet& TSet::operator=(const TSet &s) // Ð¿Ñ€Ð¸ÑÐ²Ð°Ð¸Ð²Ð°Ð½Ð¸Ðµ
 {  
 }
 
-int TSet::operator==(const TSet &s) const // ñðàâíåíèå
+int TSet::operator==(const TSet &s) const // ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ
 {
 }
 
-int TSet::operator!=(const TSet &s) const // ñðàâíåíèå
+int TSet::operator!=(const TSet &s) const // ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ
 {
 }
 
-TSet TSet::operator+(const TSet &s) // îáúåäèíåíèå
+TSet TSet::operator+(const TSet &s) // Ð¾Ð±ÑŠÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ðµ
 {
 }
 
-TSet TSet::operator+(const int Elem) // îáúåäèíåíèå ñ ýëåìåíòîì
+TSet TSet::operator+(const int Elem) // Ð¾Ð±ÑŠÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ðµ Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð¼
 {
 }
 
-TSet TSet::operator-(const int Elem) // ðàçíîñòü ñ ýëåìåíòîì
+TSet TSet::operator-(const int Elem) // Ñ€Ð°Ð·Ð½Ð¾ÑÑ‚ÑŒ Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð¼
 {
 }
 
-TSet TSet::operator*(const TSet &s) // ïåðåñå÷åíèå
+TSet TSet::operator*(const TSet &s) // Ð¿ÐµÑ€ÐµÑÐµÑ‡ÐµÐ½Ð¸Ðµ
 {
 }
 
-TSet TSet::operator~(void) // äîïîëíåíèå
+TSet TSet::operator~(void) // Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ
 {
 }
 
-// ïåðåãðóçêà ââîäà/âûâîäà
+// Ð¿ÐµÑ€ÐµÐ³Ñ€ÑƒÐ·ÐºÐ° Ð²Ð²Ð¾Ð´Ð°/Ð²Ñ‹Ð²Ð¾Ð´Ð°
 
-istream &operator>>(istream &istr, TSet &s) // ââîä
+istream &operator>>(istream &istr, TSet &s) // Ð²Ð²Ð¾Ð´
 {
 }
 
-ostream& operator<<(ostream &ostr, const TSet &s) // âûâîä
+ostream& operator<<(ostream &ostr, const TSet &s) // Ð²Ñ‹Ð²Ð¾Ð´
 {
 }
