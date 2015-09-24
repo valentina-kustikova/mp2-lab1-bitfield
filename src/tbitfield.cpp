@@ -7,6 +7,8 @@
 
 #include "tbitfield.h"
 
+#define BITS_IN_ONE_MEM sizeof(TELEM) * 8
+
 TBitField::TBitField(int len)
 {
 }
@@ -21,10 +23,12 @@ TBitField::~TBitField()
 
 int TBitField::GetMemIndex(const int n) const // индекс Мем для бита n
 {
+  return (n / BITS_IN_ONE_MEM);
 }
 
 TELEM TBitField::GetMemMask(const int n) const // битовая маска для бита n
 {
+  return 1 << n % BITS_IN_ONE_MEM;
 }
 
 // доступ к битам битового поля
