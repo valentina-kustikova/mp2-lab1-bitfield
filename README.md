@@ -136,5 +136,5 @@ __Цель данной работы__  — разработка структу�
 [git-guide]:   https://github.com/UNN-VMK-Software/mp2-lab1-set/blob/master/docs/part1-git.md
 [gtest-guide]: https://github.com/UNN-VMK-Software/mp2-lab1-set/blob/master/docs/part2-google-test.md
 [youtube-playlist]: https://www.youtube.com/playlist?list=PLSzOhsr5tmhrgV7u7CSzX4Ki1a9r0AKzV
-[slides]:      https://github.com/UNN-VMK-Software/mp2-lab1-set/tree/master/docs/git-cheatsheet
+[slides]:      https://github.com/UNN-VMK-Software/mp2-lab1-set/tree/master/docs/slides
 [upstream]:    https://github.com/UNN-VMK-Software/mp2-lab1-set
