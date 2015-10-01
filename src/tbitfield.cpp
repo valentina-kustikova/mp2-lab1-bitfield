@@ -97,4 +97,5 @@ istream &operator>>(istream &istr, TBitField &bf) // ввод
 
 ostream &operator<<(ostream &ostr, const TBitField &bf) // вывод
 {
+  cout << "{" << "}\n";
 }
