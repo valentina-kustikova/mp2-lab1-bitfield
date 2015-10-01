@@ -11,6 +11,15 @@
 
 TBitField::TBitField(int len)
 {
+  try
+  {
+    if (len <= 0) throw NegativeLengthException;
+    BitLen = len;
+  }
+  catch (NegativeLengthException)
+  {
+    cout << "Negative length!";
+  }
 }
 
 TBitField::TBitField(const TBitField &bf) // конструктор копирования
@@ -83,6 +92,7 @@ TBitField TBitField::operator~(void) // отрицание
 
 istream &operator>>(istream &istr, TBitField &bf) // ввод
 {
+  
 }
 
 ostream &operator<<(ostream &ostr, const TBitField &bf) // вывод
