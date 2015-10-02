@@ -1,6 +1,7 @@
 # Методы программирования 2: Множества на основе битовых полей
 
 [![Build Status](https://travis-ci.org/UNN-VMK-Software/mp2-lab1-set.svg)][travis]
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)][gitter]
 
 <!-- TODO
   -
@@ -8,6 +9,8 @@
 
 ## Новости
 
+  - 2015-10-02
+    - Создан [Gitter-чат][gitter], в котором можно задавать вопросы про выполнение лабораторных работ
   - 2015-09-25
     - Опубликованы [видеозаписи][youtube-playlist] с живой демонстрацией Git и
       Google Test.
@@ -138,3 +141,4 @@ __Цель данной работы__  — разработка структу�
 [youtube-playlist]: https://www.youtube.com/playlist?list=PLSzOhsr5tmhrgV7u7CSzX4Ki1a9r0AKzV
 [slides]:      https://github.com/UNN-VMK-Software/mp2-lab1-set/tree/master/docs/slides
 [upstream]:    https://github.com/UNN-VMK-Software/mp2-lab1-set
+[gitter]:      https://gitter.im/UNN-VMK-Software/mp2-lab1-set
