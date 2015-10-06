@@ -11,15 +11,7 @@
 
 TBitField::TBitField(int len)
 {
-  try
-  {
-    if (len <= 0) throw NegativeLengthException;
-    BitLen = len;
-  }
-  catch (NegativeLengthException)
-  {
-    cout << "Negative length!";
-  }
+
 }
 
 TBitField::TBitField(const TBitField &bf) // конструктор копирования
