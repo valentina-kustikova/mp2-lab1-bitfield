@@ -9,6 +9,7 @@
 
 TSet::TSet(int mp) : BitField(mp)
 {
+	// Mp = BL
 }
 
 // конструктор копирования
