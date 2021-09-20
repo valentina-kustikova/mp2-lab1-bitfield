@@ -9,7 +9,7 @@
 
 TSet::TSet(int mp) : BitField(mp)
 {
-	// Mp = BL
+
 }
 
 // конструктор копирования
@@ -59,43 +59,40 @@ int TSet::operator==(const TSet& s) const // сравнение
 
 int TSet::operator!=(const TSet& s) const // сравнение
 {
-	return 0;
+  return 0;
 }
 
 TSet TSet::operator+(const TSet& s) // объединение
 {
-	return TSet(0);
+  return TSet(0);
 }
 
 TSet TSet::operator+(const int Elem) // объединение с элементом
 {
-	return TSet(0);
 
+  return TSet(0);
 }
 
 TSet TSet::operator-(const int Elem) // разность с элементом
 {
-	return TSet(0);
-
+  return TSet(0);
 }
 
 TSet TSet::operator*(const TSet& s) // пересечение
 {
-	return TSet(0);
-
+  return TSet(0);
 }
 
 TSet TSet::operator~(void) // дополнение
 {
-	return TSet(0);
-
+  return TSet(0);
 }
 
 // перегрузка ввода/вывода
 
 istream& operator>>(istream& istr, TSet& s) // ввод
 {
-	return istr;
+  return istr;
 }
 
 ostream& operator<<(ostream& ostr, const TSet& s) // вывод

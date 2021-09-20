@@ -7,7 +7,7 @@
 
 #include "tbitfield.h"
 
-#define BITS_IN_ONE_MEM sizeof(TELEM) * 8
+#define BITS_IN_ONE_MEM (sizeof(TELEM) * 8)
 
 TBitField::TBitField(int len)
 {
@@ -24,11 +24,12 @@ TBitField::~TBitField()
 
 int TBitField::GetMemIndex(const int n) const // индекс Мем для бита n
 {
-	return 0;
+ return 0;
 }
 
 TELEM TBitField::GetMemMask(const int n) const // битовая маска для бита n
 {
+
 	return 0;
 }
 
@@ -41,6 +42,8 @@ int TBitField::GetLength(void) const // получить длину (к-во б�
 
 void TBitField::SetBit(const int n) // установить бит
 {
+	if ((n < 0) || (n > BitLen))
+		throw 2;
 }
 
 void TBitField::ClrBit(const int n) // очистить бит
@@ -81,18 +84,17 @@ TBitField TBitField::operator&(const TBitField & bf) // операция "и"
 
 TBitField TBitField::operator~(void) // отрицание
 {
-	return TBitField(0);
+  return TBitField(0);
 }
 
 // ввод/вывод
 
 istream& operator>>(istream & istr, TBitField & bf) // ввод
 {
-	return istr;
+  return istr;
 }
 
 ostream& operator<<(ostream & ostr, const TBitField & bf) // вывод
 {
-
 	return ostr;
 }
