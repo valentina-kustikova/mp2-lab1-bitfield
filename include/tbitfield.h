@@ -35,12 +35,14 @@ public:
   void ClrBit(const int n);       // очистить бит                         (#П2)
   int  GetBit(const int n) const; // получить значение бита               (#Л1)
 
-  // битовые операции
-  int operator==(const TBitField &bf) const; // сравнение                 (#О5)
-  int operator!=(const TBitField &bf) const; // сравнение
+  // надо учитывать, что TBitField может быть разной длины в int-ах
+  // TBitField bf1(100) - 4 int, bf2(15) - 1 int
   TBitField& operator=(const TBitField &bf); // присваивание              (#П3)
   TBitField  operator|(const TBitField &bf); // операция "или"            (#О6)
   TBitField  operator&(const TBitField &bf); // операция "и"              (#Л2)
+  int operator==(const TBitField& bf) const; // сравнение                 (#О5)
+  int operator!=(const TBitField& bf) const; // сравнение
+    
   TBitField  operator~(void);                // отрицание                  (#С)
 
   friend istream &operator>>(istream &istr, TBitField &bf);       //      (#О7)
