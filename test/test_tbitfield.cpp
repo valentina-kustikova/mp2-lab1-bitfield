@@ -1,6 +1,9 @@
+#include "pch.h"
+
+//#include "../gtest/gtest.h"
+
 #include "tbitfield.h"
 
-#include <gtest.h>
 
 TEST(TBitField, can_create_bitfield_with_positive_length)
 {

@@ -9,32 +9,32 @@
 
 TSet::TSet(int mp) : BitField(mp)
 {
-	// Mp = BL
+
 }
 
 // конструктор копирования
-TSet::TSet(const TSet &s) : BitField(mp)
+TSet::TSet(const TSet& s) : BitField(0)
 {
 }
 
 // конструктор преобразования типа
-TSet::TSet(const TBitField &bf) : BitField(mp)
+TSet::TSet(const TBitField& bf) : BitField(0)
 {
 }
 
 TSet::operator TBitField()
 {
-  return BitField;
+	return BitField;
 }
 
 int TSet::GetMaxPower(void) const // получить макс. к-во эл-тов
 {
-  return MaxPower;
+	return MaxPower;
 }
 
 int TSet::IsMember(const int Elem) const // элемент множества?
 {
-    return 0;
+	return 0;
 }
 
 void TSet::InsElem(const int Elem) // включение элемента множества
@@ -47,58 +47,55 @@ void TSet::DelElem(const int Elem) // исключение элемента мн
 
 // теоретико-множественные операции
 
-TSet& TSet::operator=(const TSet &s) // присваивание
+TSet& TSet::operator=(const TSet& s) // присваивание
 {
-  return *this;
+	return *this;
 }
 
-int TSet::operator==(const TSet &s) const // сравнение
+int TSet::operator==(const TSet& s) const // сравнение
 {
-    return 0;
+	return 0;
 }
 
-int TSet::operator!=(const TSet &s) const // сравнение
+int TSet::operator!=(const TSet& s) const // сравнение
 {
   return 0;
 }
 
-TSet TSet::operator+(const TSet &s) // объединение
+TSet TSet::operator+(const TSet& s) // объединение
 {
   return TSet(0);
 }
 
 TSet TSet::operator+(const int Elem) // объединение с элементом
 {
-  return TSet(0);
 
+  return TSet(0);
 }
 
 TSet TSet::operator-(const int Elem) // разность с элементом
 {
   return TSet(0);
-
 }
 
-TSet TSet::operator*(const TSet &s) // пересечение
+TSet TSet::operator*(const TSet& s) // пересечение
 {
   return TSet(0);
-
 }
 
 TSet TSet::operator~(void) // дополнение
 {
   return TSet(0);
-
 }
 
 // перегрузка ввода/вывода
 
-istream &operator>>(istream &istr, TSet &s) // ввод
+istream& operator>>(istream& istr, TSet& s) // ввод
 {
   return istr;
 }
 
-ostream& operator<<(ostream &ostr, const TSet &s) // вывод
+ostream& operator<<(ostream& ostr, const TSet& s) // вывод
 {
-  return ostr;
+	return ostr;
 }
